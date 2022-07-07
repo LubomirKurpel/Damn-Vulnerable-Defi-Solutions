@@ -48,7 +48,7 @@ contract CustomSelfie {
 		console.log("Flashloan Received");
 		
 		// Check the current balance of tokens
-		console.log("Token balance: " + DamnValuableToken.balanceOf(address(this)));
+		console.log("Token balance:", DamnValuableToken.balanceOf(address(this)));
 		
 		DamnValuableToken.snapshot();
 		
