@@ -3,4 +3,4 @@ My solutions to a game of Damn Vulnerable Defi. A set of challenges to learn off
 Featuring flash loans, price oracles, governance, NFTs, lending pools, smart contract wallets, timelocks, and more!
 
 ### Play
-Visit damnvulnerabledefi.xyz
+Visit [http://damnvulnerabledefi.xyz]damnvulnerabledefi.xyz
